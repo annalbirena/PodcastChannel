@@ -1,0 +1,101 @@
+/*GLOBALS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24;
+}
+
+/*FONTS*/
+h1,
+h2{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2.25rem;
+}
+
+/*FONT COLOR*/
+.blue{
+    color: #0000EC;
+}
+.white{
+    color: #FFFFFF;
+}
+
+/*HEADER*/
+
+.header{
+    height: 44px;
+    font-size: 1.5rem;
+}
+.header__nav{
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*MAIN*/
+
+/*WELCOME SECTION*/
+.main__section-welcome{
+    padding: 36px 16px 24px 16px;
+}
+h1{
+    letter-spacing: 2px;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.main__p{
+    margin: 20px 0 36px 0;
+    font-size: 0.8rem;
+    line-height: 22px;
+}
+.btn{
+    height: 48px;
+    width: 100%;
+    background-color: #00F3BB;
+    outline: none;
+    border: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/*EPISODES SECTION*/
+.main__section-episodes{
+    clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+}
+.main__container-episodes{
+    padding: 64px 0;
+    width: 90%;
+    margin: auto;
+}
+h2{
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+iframe{
+    margin-bottom: 10px;
+}
+/*US SECTION*/
+.main__section-us{
+    margin-top: -100px;
+}
+.main__phone{
+    width: 100%;
+    margin: auto;
+}
+.main__phone-img{
+    width: 100%;
+}
