@@ -16,28 +16,40 @@
 
 <body>
     <header class="header">
-        <nav class="header__nav">
-            <div class="header__logo">
-                <a href="#welcome"><img class="header__img" src="./images/logo.svg"></a>
+        <div class="menu">
+            <img class="logo" src="./images/logo.svg">
+            <div class="menu-dropdown">
+                <input class="menu-input" type="checkbox" id="menu-btn">
+                <label class="menu-label" for="menu-btn">
+                    <div class="inner"></div>
+                </label>
+                <nav class="menu-content">
+                    <ul>
+                        <li><a href="#episodes">EPISODIOS</a></li>
+                        <li><a href="#about-us">NOSOTROS</a></li>
+                        <li><a href="#">ENTREVISTAS</a></li>
+                        <li><a href="#">TOPICOS</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="header__menu">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+        </div>
     </header>
     <main class="main">
-        <section class="main__section-welcome">
-            <div class="main__container-welcome">
+        <section id="welcome" class="welcome">
+            <div class="welcome-container">
                 <h1>Hello <span class="line-through">world</span> pale blue dot<span class="blue">.</span></h1>
-                <p class="main__p">Un podcast que explora el mundo de la programación. Nuevos episodios,
+                <p class="welcome-texto">Un podcast que explora el mundo de la programación. Nuevos episodios,
                     todos los jueves cada 15 días.</p>
-                <button class="main__btn btn">CONOCE MÁS</button>
+                <p class="welcome-texto-desktop">El portal de podcasts que explora el mundo de la programación y la
+                    tecnología.
+                    Nuevos episodios, todos los jueves cada 15 días.</p>
+                <button class="btn">CONOCÉ MÁS</button>
             </div>
         </section>
-        <section class="main__section-episodes">
-            <div class="main__container-episodes">
+        <section id="episodes" class="episodes">
+            <div class="episodes-container">
                 <h2 class="white">Episodios</h2>
-                <div class="main__flex-episodes">
+                <div class="episodes-gallery">
                     <iframe src="https://open.spotify.com/embed/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%"
                         height="232" frameborder="0" allowtransparency="true" allow="encrypted-media">
                     </iframe>
@@ -53,75 +65,105 @@
                 </div>
             </div>
         </section>
-        <section class="main__section-us">
-            <div class="main__phone">
-                <img class="main__phone-img" src="./images/phone.png" alt="">
+        <section id="about-us" class="about-us">
+            <div class="phone">
+                <img src="./images/phone.png" alt="">
             </div>
-            <div>
+            <div class="about-us-text">
                 <h2>De dónde venimos</h2>
                 <p>Our posturings, our imagined self-importande, the delusion that we have come privileged position in
-                    the Universe, are challenged by this point of pale light. <br>
-                    Our planet is a lonely speck in the great enveloping cosmis dark . In our obscurity, in all this
-                    vastness, there is no hint that help will come from elsewhere to save us from ourselves</p>
+                    the Universe, are challenged by this point of pale light.</p>
+                <p> Our planet is a lonely speck in the great enveloping cosmis dark . In our obscurity, in all this
+                    vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
             </div>
         </section>
-        <section class="main__section-ghests">
+        <section class="ghests">
             <h2>Invitadas/os estelares</h2>
-            <!-- <div>
+            <div class="ghests-gallery">
                 <div>
-                    <figure><img src="./images/guest01.png" alt=""></figure>
+                    <img src="./images/guest01.png" alt="">
                 </div>
                 <div>
-                    <figure><img src="./images/guest02.png" alt=""></figure>
+                    <img src="./images/guest02.png" alt="">
                 </div>
                 <div>
-                    <figure><img src="./images/guest03.png" alt=""></figure>
+                    <img src="./images/guest03.png" alt="">
                 </div>
                 <div>
-                    <figure><img src="./images/guest04.png" alt=""></figure>
+                    <img src="./images/guest04.png" alt="">
                 </div>
                 <div>
-                    <figure><img src="./images/guest05.png" alt=""></figure>
+                    <img src="./images/guest05.png" alt="">
                 </div>
                 <div>
-                    <figure><img src="./images/guest06.png" alt=""></figure>
-                </div>
-            </div> -->
-        </section>
-        <section class="main__section-topics">
-            <h2>Algunos de nuestros temas</h2>
-            <div>
-                <div>
-                    <figure><img src="./images/icon1.svg" alt=""></figure>
-                    <p>Trabajo remoto</p>
-                </div>
-                <div>
-                    <figure><img src="./images/icon2.svg" alt=""></figure>
-                    <p>Repensando la programacion</p>
-                </div>
-                <div>
-                    <figure><img src="./images/icon3.svg" alt=""></figure>
-                    <p>Base del codigo</p>
-                </div>
-                <div>
-                    <figure><img src="./images/icon4.svg" alt=""></figure>
-                    <p>Seguridad informatica</p>
+                    <img src="./images/guest06.png" alt="">
                 </div>
             </div>
         </section>
-        <section class="main__section-news">
-            <h2>¿Quierés las últimas novedades?</h2>
-            <button class="button">ESCUCHA LOS EPISODIOS</button>
+        <section class="topics">
+            <h2>Algunos de nuestros temas</h2>
+            <div class="topics-gallery">
+                <div class="topic">
+                    <div>
+                        <img src="./images/icon1.svg" alt="">
+                    </div>
+                    <span>Trabajo remoto</span>
+                </div>
+                <div class="topic">
+                    <div>
+                        <img src="./images/icon2.svg" alt="">
+                    </div>
+                    <span>Repensando la programación</span>
+                </div>
+                <div class="topic">
+                    <div>
+                        <img src="./images/icon3.svg" alt="">
+                    </div>
+                    <span>Base del código</span>
+                </div>
+                <div class="topic">
+                    <div>
+                        <img src="./images/icon4.svg" alt="">
+                    </div>
+                    <span>Seguridad informática</span>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="news-container">
+                <h2 class="white">¿Quierés las últimas novedades?</h2>
+                <button class="btn">ESCUCHA LOS EPISODIOS</button>
+            </div>
         </section>
     </main>
-    <footer>
-        <span>2019 - Hello blue pale dot</span>
-        <nav>
-            <li>spotify</li>
-            <li>ig</li>
-            <li>twitter</li>
-            <li>facebook</li>
-            <li>telegram</li>
+    <footer class="footer">
+        <label>© 2019- Hello blue pale dot</label>
+        <nav class="footer-nav">
+            <li>
+                <a href="https://www.spotify.com/pe/">
+                    <i class="fab fa-spotify"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.spotify.com/pe/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.spotify.com/pe/">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.spotify.com/pe/">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.spotify.com/pe/">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </li>
         </nav>
     </footer>
 </body>
