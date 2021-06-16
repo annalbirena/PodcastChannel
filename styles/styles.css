@@ -39,9 +39,7 @@ span{
     background-color: #FFFFFF;
 }
 .menu{
-    max-width: 1440px;
     padding: 10px 16px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,10 +130,6 @@ header a:active{
     margin-top: 44px;
     padding: 30px 16px 24px;
 }
-.welcome_container{
-    max-width: 1040px;
-    margin: auto;
-}
 h1{
     letter-spacing: 2px;
 }
@@ -161,14 +155,14 @@ p{
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1rem;
     font-weight: bold;
-    transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out;
     cursor: pointer;
 }
 .btn:hover{
     color: #FFFFFF;
     font-weight: normal;
     background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
-    transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 /*EPISODES SECTION*/
@@ -199,16 +193,19 @@ iframe{
 }
 .phone img{
     width: 100%;
+    height: 100%;
 }
 .about-us-text{
-    padding: 27px 16px 54px;
+    padding: 27px 16px 0;
 }
 .about-us-text p:first-of-type{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /*GUEST SECTION*/
-
+.ghests{
+    padding-top: 54px;
+}
 .ghests h2{
     padding: 0 16px;
 }
@@ -228,10 +225,7 @@ iframe{
 /*TOPIC SECTION*/
 
 .topics{
-    padding: 0 16px 30px;
-}
-.topics h2{
-    margin-top: 48px;
+    padding: 48px 16px 30px;
 }
 .topics-gallery{
     display: flex;
@@ -267,8 +261,9 @@ iframe{
 
 .footer{
     padding: 24px 45px 31px;
-}
-.footer *{
+}    
+.footer a,
+.footer label{
     color: #060A24;
 }
 .footer label{
@@ -280,3 +275,222 @@ iframe{
     justify-content: space-between;
 }
 
+.footer a:hover{
+    color: #00F3BB;
+}
+
+/*RESPONSIVE DESIGN*/
+@media screen and (min-width: 900px){
+    /*HEADER*/
+    .menu{
+        padding: 25px;
+    }
+    .logo{
+        width: 36px;
+    }
+    .menu-label{
+        display: none;
+    }
+    .menu-content{
+        position: unset;
+        transition: none;
+    }
+    .menu-content *{
+        width: auto;
+    }
+    .menu-content ul{
+        display: flex;
+    }
+    .menu-content li{
+        margin-left: 48px;
+    }
+    .menu-content a {
+        padding: 0;
+        color: #060A24;
+        background-color: unset;
+    }
+
+    /*WELCOME*/
+    h1,
+    span{
+        font-size: 4rem;
+    }
+    .welcome{
+        margin-top: 80px;
+        padding: 40px 25px;
+    }
+    .welcome-texto{
+        display: none;
+    }
+    .welcome-texto-desktop{
+        display: block;
+        width: 70%;
+        margin-bottom: 30px;
+    }
+    .welcome .btn{
+        width: 226px;
+    }
+    /*EPISODES*/
+    h2{
+        font-weight: 200;
+        font-size: 3rem;
+        margin-bottom: 36px;
+    }
+    .episodes{
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    }
+    .episodes-container{
+        padding: 100px 25px 100px;
+    }
+    .episodes-gallery{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    iframe{
+        width: 47%;
+        margin-bottom: 74px;
+    }
+    /*ABOUT US*/
+    .about-us{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .phone{
+        width: 30%;
+        margin: auto;
+    }
+    .phone img{
+        width: 100%;
+    }
+    .about-us-text{
+        width: 50%;
+    }
+    .about-us-text h2{
+        margin-bottom: 24px;
+    }
+    .about-us-text p{
+        width: 90%;
+    }
+    p{
+        font-size: 1rem;
+    }
+    /*GUESTS*/
+    .ghests-gallery div{
+        flex: 50%;
+    }
+    /*TOPICS*/
+    .topics{
+        padding: 48px 25px 30px;
+    }
+    .topics-gallery{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .topic{
+        width: 50%;
+    }
+    /*NEWS*/
+    .news{
+        padding: 75px 25px 67px;
+        clip-path: polygon(0 15%, 0 100%, 100% 100%, 100% 0);
+    }
+    .news-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .news .btn{
+        width: 345px;
+    }
+    /*FOOTER*/
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-nav{
+        margin: 0;
+    }
+    .footer-nav li{
+        margin-left: 36px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    /*HEADER*/
+    .menu{
+        max-width: 1440px;
+        margin: auto;
+        padding: 22px 100px;
+    }
+    /*WELCOME*/
+    .welcome{
+        max-width: 1440px;
+        margin: 80px auto 0;
+        padding: 120px 200px 0;
+    }
+    .welcome-texto-desktop{
+        width: 60%;
+        margin-bottom: 56px;
+    }
+    /*EPISODES*/
+    .episodes{
+        clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    }
+    .episodes-container{
+        max-width: 1240px;
+        margin: auto;
+        padding: 210px 0 156px;
+    }
+    .episodes h2{
+        padding-left: 100px;
+    }
+    /*ABOUT US*/
+    .about-us{
+        max-width: 1240px;
+        margin: auto;
+        margin-top: -150px;
+    }
+    .phone{
+        width: 430px;
+        /* height: 660px; */
+        margin: auto;
+    }
+    .about-us-text{
+        padding: 0 100px 0  0;
+    }
+    /*GUESTS*/
+    .ghests h2{
+        max-width: 1440px;
+        margin: 0 auto 36px;
+        padding-left: 200px;
+    }
+    .ghests-gallery div{
+        flex: 30%;
+    }
+    /*TOPICS*/
+    .topics{
+        max-width: 1440px;
+        margin: auto;
+        padding: 64px 200px 34px;
+    }
+    .topic{
+        width: 25%;
+    }
+    /*NEWS*/
+    .news{
+        padding: 210px 375px 150px;
+        clip-path: polygon(0 25%, 0 100%, 100% 100%, 100% 0);
+    }
+    /*FOOTER*/
+    .footer{
+        max-width: 1440px;
+        margin: auto;
+        padding: 36px 100px;
+    }
+    .footer label{
+        font-size: 1rem;
+    }
+}
