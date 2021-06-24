@@ -508,7 +508,7 @@ h2{
 
     .ghests{
         &__gallery{
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 1fr;
         }
     }
 
@@ -518,7 +518,7 @@ h2{
         padding: 48px 25px 30px;
 
         &__gallery{
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 1fr;
         }
     }
 
@@ -617,7 +617,7 @@ h2{
             padding-left: 200px;
         }
         &__gallery{
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 
@@ -631,7 +631,7 @@ h2{
             margin-bottom: 56px;
         }
         &__gallery{
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 0;
         }
 
