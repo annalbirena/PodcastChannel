@@ -1,6 +1,7 @@
 # Podcast Channel 🎵
 
-Landing Page Responsive que comparte información sobre podcasts de programación, así como información adicional sobre tecnología.
+Landing Page (Responsive) que comparte información sobre podcasts de programación, así como información adicional sobre tecnología.
+Landing Page (Responsive) that shares information about programming podcasts, as well as additional information about technology.
 
 # Demo 🌎
 
