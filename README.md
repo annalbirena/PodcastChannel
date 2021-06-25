@@ -6,7 +6,7 @@ Landing Page Responsive que comparte información sobre podcasts de programació
 
 www.google.com
 
-# Versions 👩🏾‍💻
+# Versions
 
 | Desktop Version | Mobile Version |
 | ------------- | ------------- |
