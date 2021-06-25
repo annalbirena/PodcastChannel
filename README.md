@@ -4,7 +4,7 @@ Landing Page (Responsive) that shares information about programming podcasts, as
 
 # Demo 🌎
 
-annalbirena.github.io/podcastchannel/
+www.annalbirena.github.io/podcastchannel/
 
 # Versions
 
