@@ -1,1 +1,3 @@
-# Podcast Channel 📻
+# Podcast Channel 🎵�
+
+Landing Page Responsive
