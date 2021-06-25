@@ -8,34 +8,16 @@ www.google.com
 
 # Proyecto
 
-![Proyecto](https://user-images.githubusercontent.com/30696989/123358218-b662b200-d530-11eb-9117-d56ee612485c.png)
 
-Thanks goes to these wonderful people (emoji key):
 
-Jody LeCompte
-Jody LeCompte
-💻	Monica Powell
-Monica Powell
-💻 🖋 📖	DAugusteDataTip
-DAugusteDataTip
-🖋	Lauren
-Lauren
-💻	Ebonie
-Ebonie
-💻	deb outlaw
-deb outlaw
-💻	Sara Hernández
-Sara Hernández
-💻
-kharaone
-kharaone
-💻	Riba Ishtiaq
-Riba Ishtiaq
-💻	Jolene Langlinais
-Jolene Langlinais
-📖	ruidpm
-ruidpm
-🖋
-This project follows the all-contributors specification. Contributions of any kind welcome!
+# Versions
+
+| Desktop Version | Mobile Version |
+| ------------- | ------------- |
+| ![Proyecto](https://user-images.githubusercontent.com/30696989/123358218-b662b200-d530-11eb-9117-d56ee612485c.png)  | ![Proyecto_mobile](https://user-images.githubusercontent.com/30696989/123358609-54567c80-d531-11eb-8577-6bc3f0c2b74c.png)  |
+
+
+
+
 
 
