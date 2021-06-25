@@ -5,8 +5,8 @@ Solo usar HTML y CSS
 No usar librerias de CSS
 
 # RESPONSIVE
-Mobile  400px
-Desktop 900px
+    Mobile  400px
+    Desktop 900px
 
 # REQUERIMIENTOS ADICIONALES
 Animar la entrada/salida del menu de laivista movil

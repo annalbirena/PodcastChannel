@@ -387,7 +387,7 @@ h2{
 
 /*RESPONSIVE*/
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: $tablet-width){
 
     p,
     .welcome__texto,
@@ -556,7 +556,7 @@ h2{
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: $desktop-width){
 
     /*MENU*/
     .menu{
