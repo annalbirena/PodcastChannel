@@ -14,15 +14,22 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body,
+button {
   font-family: "IBM Plex Mono", monospace;
   color: #060A24;
 }
 
 h1,
 h2,
-span {
+span,
+figcaption {
   font-family: "IBM Plex Sans", sans-serif;
+}
+
+h1,
+h2,
+span {
   font-size: 2.25rem;
   font-weight: 400;
 }
@@ -188,7 +195,6 @@ h2 {
 .button {
   height: 48px;
   width: 100%;
-  font-family: "IBM Plex Mono", monospace;
   font-size: 1rem;
   font-weight: bold;
   background-color: #00F3BB;
@@ -295,25 +301,6 @@ h2 {
   transition: all .4s ease;
 }
 
-.ghests__text {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  background-color: #0000005e;
-  color: #FFFFFF;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-}
-
-.ghests__img-container:hover .ghests__text {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all .4s  ease-in-out;
-  transition: all .4s  ease-in-out;
-}
-
 .ghests__img-container:hover .ghests__img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -351,7 +338,6 @@ h2 {
 
 .topics__caption {
   padding: 13px;
-  font-family: "IBM Plex Sans", sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
 }

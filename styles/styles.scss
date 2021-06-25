@@ -34,19 +34,28 @@ $desktop-width: 1024px;
     list-style: none;
     text-decoration: none;
 }
+
 html{
     font-size: 16px;
     scroll-behavior: smooth;
 }
-body{
+
+body,
+button{
     font-family: $font-mono;
     color: $color-black-2;
 }
 
 h1,
 h2,
-span{
+span,
+figcaption{
     font-family: $font-plex;
+}
+
+h1,
+h2,
+span{
     font-size: 2.25rem;
     font-weight: 400;
 }
@@ -121,13 +130,16 @@ h2{
         top: 12px;
         transform: rotate(45deg);
     }
+
     &__input:checked ~ &__label &__inner::before{
         visibility: hidden;
     }
+
     &__input:checked ~ &__label &__inner::after{
         top: 0px;
         transform: rotate(-90deg);
     }
+
     &__input:checked ~ .nav{
         /*transform: translateX(-100vw);*/
         left: calc(-100vw + 34px);
@@ -156,6 +168,7 @@ h2{
             text-decoration: line-through;
             transition: all .2s ease-in-out;
         }
+
         &:active{
             color: $color-black-3;
             text-decoration: line-through;
@@ -199,7 +212,6 @@ h2{
 .button{
     height: 48px;
     width: 100%;
-    font-family: $font-mono;
     font-size: 1rem;
     font-weight: bold;
     background-color: $color-green-1;
@@ -229,6 +241,7 @@ h2{
     &__title{
         color: $color-white-1;
     }
+
     &__gallery{
         display: grid;
         grid-gap: 11px;
@@ -245,10 +258,12 @@ h2{
         width: 320px;
         margin: auto;
     }
+
     &__phone-img{
         width: 100%;
         height: 100%;
     }
+
     &__text{
         padding: 27px 16px 0;
             
@@ -256,6 +271,7 @@ h2{
             margin-bottom: 15px;
         }
     }
+
     &__paragraph{
         font-size: 0.875rem;
         line-height: 22px;
@@ -290,25 +306,9 @@ h2{
         transition: all .4s ease;
     }
 
-    &__text{
-        position: absolute;
-        width: 80%;
-        height: 80%;
-        background-color: $color-black-4;
-        color: $color-white-1;
-        transform: scale(0);
-        transition: all .4s ease;
-    }
-
-    &__img-container:hover  &__text{
-        transform: scale(1);
-        transition: all .4s  ease-in-out;
-    }
-
     &__img-container:hover  &__img{
         transform: scale(1.1);
-    }
-    
+    }   
 }
 
 /*TOPIC SECTION*/
@@ -335,7 +335,6 @@ h2{
 
     &__caption{
         padding: 13px;
-        font-family: $font-plex;
         font-weight: bold;
         font-size: 1.5rem;
     }
@@ -451,6 +450,7 @@ h2{
             line-height: 70px;
             width: 100%;
         }
+
         &__texto--mobile{
             display: none;
         }
@@ -491,15 +491,19 @@ h2{
             width: 40%;
             margin: auto;
         }
+
         &__phone-img{
             width: 100%;
         }
+
         &__text{
             width: 50%;
         }
+
         &__title{
             margin-bottom: 24px;
         }
+
         &__paragraph{
             width: 90%;
         }
@@ -508,6 +512,7 @@ h2{
     /*GUESTS*/
 
     .ghests{
+
         &__gallery{
             grid-template-columns: 1fr 1fr;
         }
@@ -586,9 +591,11 @@ h2{
             margin: auto;
             padding: 210px 0 230px;
         }
+        
         &__title{
             padding-left: 100px;
         }
+
         &__gallery{
             grid-gap: 72px;
         }
@@ -604,6 +611,7 @@ h2{
             width: 430px;
             margin: auto;
         }
+
         &__text{
             padding: 0 100px 0  0;
         }
@@ -617,6 +625,7 @@ h2{
             margin: 0 auto 36px;
             padding-left: 200px;
         }
+
         &__gallery{
             grid-template-columns: 1fr 1fr 1fr;
         }
@@ -631,6 +640,7 @@ h2{
         &__title{
             margin-bottom: 56px;
         }
+
         &__gallery{
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 0;
