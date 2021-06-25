@@ -24,10 +24,10 @@ Utilizar iconos SVG
     -FOOTER
 
 # CONDICIONES DE ENTREGA
-Codigo fuente zipeado albirenaanadwfe-online-cyf-4.zip
-El proyecto debe ser deployado y accesible en una URL
-Al hacer click en los botones del menú de navegación, la página deberá moverse a la sección correspondiente.
-Los podcast se deben escuchar correctamente desde la página web.
+- Codigo fuente zipeado albirenaanadwfe-online-cyf-4.zip
+- El proyecto debe ser deployado y accesible en una URL
+- Al hacer click en los botones del menú de navegación, la página deberá moverse a la sección correspondiente.
+- Los podcast se deben escuchar correctamente desde la página web.
 
     COMPONENTES
     El menú de navegación debe intercalarse entre sus versiones para escritorio y móvil respectivamente, como se muestra en los recursos.
